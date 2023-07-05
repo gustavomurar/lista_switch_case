@@ -11,12 +11,25 @@
     conforme o caso.
     */
 
-    //ENTRADA
-    
-    
-    //PROCESSAMENTO
+    const re = prompt("Em que turno você estuda, M-matutino, V-vespertino, N-noturno").toUpperCase();
 
-    
-    //SAÍDA
+    switch (re){
+
+    case "M":
+        alert(`Bom Dia!`);
+    break;
+
+    case "V":
+        alert(`Boa Tarde!`);
+    break;
+
+    case "N":
+        alert(`Boa Noite!`);
+    break;
+
+    default:
+        alert(`Valor Inválido!`);
+    break;
+    }
 
 </script>
