@@ -13,19 +13,16 @@
     let resultado = 0;
 
     switch (ee) {
-    case "+":
+        case "+":
         resultado = qq + ww;
         break;
-    
-    case "-":
+        case "-":
         resultado = qq - ww;
         break;
-    
-    case "*":
+        case "*":
         resultado = qq * ww;
-        break;
-    
-    case "/":
+        break;   
+        case "/":
         resultado = qq / ww;
         break;
     }
@@ -39,8 +36,8 @@
         alert(`O resultado é ímpar!`);
         break;
     }
-    switch (resultado){
-        case  >= 0:
+    switch (resultado > 0){
+        case  true:
         alert(`O resultado é positivo`);
         break;
     
@@ -48,8 +45,8 @@
         alert(`O resultado é nagativo`);
         break;
     }
-    switch (resultado){
-        case "Number.isInteger":
+    switch (Number.isInteger(resultado)){
+        case true:
         alert(`O resultado é inteiro`);
         break;
         default:
