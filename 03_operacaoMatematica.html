@@ -47,16 +47,13 @@
         default:
         alert(`O resultado é nagativo`);
         break;
-
     }
-
-    if (Number.isInteger(resultado)){
+    switch (resultado){
+        case "Number.isInteger":
         alert(`O resultado é inteiro`);
-    }
-
-    else {
+        break;
+        default:
         alert(`O resultado é decimal`);
+        break;
     }
-    
-
 </script>
