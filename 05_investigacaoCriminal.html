@@ -17,24 +17,22 @@
     const yy = prompt("responda com sim ou não: Devia para a vítima?").toUpperCase();
     const ww = prompt("responda com sim ou não: Já trabalhou com a vítima?").toUpperCase();
    
-    switch (nn) {
+    switch (nn && ee){
     case "sim":
     alert(`suspeita`);
     break;
-  
-   
+    
     case (nn === "sim" && rr === "sim"):
     alert(`suspeita`);
     break;  
   
-    
     case (nn === "sim" && yy === "sim"):
     alert(`suspeita`);
     break;
    
     case (nn === "sim" && ww === "sim"):
     alert(`suspeita`);
-   break;
+    break;
   
     case (ee === "sim" && rr === "sim"):
     alert(`susupeita`);
@@ -52,7 +50,7 @@
     alert(`suspeita`);
     break;
    
-     if(rr === "sim" && ww === "sim")
+    if(rr === "sim" && ww === "sim")
     alert(`suspeita`);
   
    
@@ -124,5 +122,4 @@
     alert(`Inocente`)
   }
     
-
 </script>
